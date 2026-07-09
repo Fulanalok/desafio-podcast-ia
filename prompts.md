@@ -90,3 +90,19 @@ Verifique se existem README, prompts usados, roteiro, arquivo de audio, capa e r
 Sugira melhorias para deixar o projeto mais claro para avaliadores.
 ```
 
+## 10. Prompt para Midjourney
+
+```text
+/imagine prompt: modern podcast cover art for a Brazilian technology podcast called "Prompts na Pratica", main visual of a professional microphone surrounded by subtle artificial intelligence elements, chat bubbles, neural network lines, clean futuristic design, dark navy blue background, green and white accents, friendly educational mood, high contrast, centered composition, readable title text area, minimal and polished, digital art, 1:1 aspect ratio --ar 1:1 --v 6 --style raw
+```
+
+## 11. Direcao para ElevenLabs
+
+```text
+Narrar em portugues do Brasil, com tom didatico, amigavel e natural.
+O ritmo deve ser calmo, mas nao lento demais.
+Usar pausas curtas entre blocos de ideias.
+Dar leve enfase em termos como "prompts", "contexto", "objetivo" e "revisao humana".
+Soar como uma explicacao de professor para alunos iniciantes.
+```
+
