@@ -64,3 +64,29 @@ Crie uma descricao curta para um repositorio GitHub de um projeto de podcast ger
 Inclua objetivo, arquivos do projeto, conceitos usados e instrucoes de entrega.
 ```
 
+## 7. Prompt para capa do podcast
+
+```text
+Crie uma ideia de capa para um podcast chamado "Prompts na Pratica".
+O tema e inteligencia artificial para iniciantes.
+A capa deve transmitir tecnologia, clareza e aprendizado.
+Use um microfone como elemento principal e uma paleta com azul escuro, verde e branco.
+```
+
+## 8. Prompt para direcao de audio
+
+```text
+Transforme este roteiro em uma narracao natural para podcast.
+Use pausas curtas entre blocos de ideias.
+O tom deve ser didatico, calmo e proximo.
+Evite velocidade muito rapida e destaque os termos principais.
+```
+
+## 9. Prompt para revisao final do repositorio
+
+```text
+Revise a estrutura de um repositorio GitHub para entrega de um podcast criado com IA.
+Verifique se existem README, prompts usados, roteiro, arquivo de audio, capa e referencia ao projeto base.
+Sugira melhorias para deixar o projeto mais claro para avaliadores.
+```
+
