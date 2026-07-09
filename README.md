@@ -1,32 +1,18 @@
-# Podcast Gerado com IA: Prompts na Pratica
+# Prompts na Pratica: podcast com IA
 
-Projeto desenvolvido para o desafio da DIO sobre criacao de podcast com apoio de inteligencia artificial.
+Este repositorio foi criado para o desafio da DIO de gerar um podcast com apoio de inteligencia artificial.
 
-## Objetivo
+A ideia foi fazer um episodio curto, simples e direto sobre um assunto que aparece o tempo todo quando falamos de IA generativa: **como escrever bons prompts**.
 
-Criar um episodio curto de podcast usando ferramentas de IA generativa para apoiar:
+## Sobre o episodio
 
-- definicao do tema;
-- criacao do titulo;
-- roteiro;
-- estrutura narrativa;
-- geracao de voz;
-- organizacao dos prompts utilizados.
+**Titulo:** Prompts na Pratica: como conversar melhor com a IA
 
-## Tema do Podcast
+O podcast explica o que e um prompt, por que instrucoes vagas costumam gerar respostas fracas e como melhorar um pedido usando contexto, objetivo, formato e restricoes.
 
-**Prompts na Pratica: como conversar melhor com a IA**
+Escolhi esse tema porque ele e util mesmo para quem esta comecando agora. Antes de usar ferramentas de IA para tarefas mais complexas, faz sentido aprender a pedir melhor.
 
-O episodio explica, de forma simples, o que sao prompts, por que eles sao importantes e como uma boa instrucao pode melhorar as respostas de modelos de IA.
-
-## Arquivos do Projeto
-
-- `prompts.md`: lista dos prompts usados durante a criacao do projeto.
-- `roteiro-podcast.md`: roteiro completo do episodio.
-- `audio/podcast-prompts-na-pratica.wav`: audio do podcast gerado a partir do roteiro.
-- `scripts/gerar-audio.ps1`: script usado para gerar o audio em formato WAV.
-
-## Estrutura
+## O que tem no repositorio
 
 ```text
 desafio-podcast-ia/
@@ -39,34 +25,48 @@ desafio-podcast-ia/
     `-- gerar-audio.ps1
 ```
 
-## Como o Projeto Foi Criado
+Arquivos principais:
 
-1. Foi escolhido um tema relacionado a inteligencia artificial generativa.
-2. Foram criados prompts para gerar ideias de titulo, estrutura e roteiro.
-3. O roteiro foi revisado para ficar mais claro e didatico.
-4. O audio foi gerado a partir do texto final do roteiro, com pausas e ritmo de narracao.
-5. Todos os arquivos foram organizados para entrega em um repositorio GitHub.
+- `prompts.md`: prompts usados para pensar no tema, titulo, roteiro e descricao do projeto.
+- `roteiro-podcast.md`: texto final usado como base do episodio.
+- `audio/podcast-prompts-na-pratica.wav`: audio final do podcast.
+- `scripts/gerar-audio.ps1`: script em PowerShell usado para gerar o audio com voz sintetizada.
 
-## Tecnologias e Conceitos Usados
+## Como eu organizei o processo
 
-- Inteligencia Artificial Generativa
-- Engenharia de Prompt
-- Roteirizacao de conteudo
+1. Defini o tema do episodio: engenharia de prompts para iniciantes.
+2. Usei prompts para gerar ideias de titulo e estrutura.
+3. Montei um roteiro curto, com linguagem mais proxima de conversa.
+4. Revisei o texto para ficar mais natural em formato de podcast.
+5. Gerei o audio em `.wav` usando sintese de voz no Windows.
+6. Ajustei pausas e ritmo no script para o audio nao ficar tao mecanico.
+
+## Ferramentas e conceitos usados
+
+- IA generativa
+- Engenharia de prompt
+- Roteirizacao
 - Sintese de voz
+- Markdown
 - Git e GitHub
-- Documentacao em Markdown
 
-## Como Entregar na DIO
+## Como gerar o audio novamente
 
-1. Crie um novo repositorio no GitHub.
-2. Envie todos os arquivos deste projeto para o repositorio.
-3. Confirme se o arquivo de audio esta dentro da pasta `audio`.
-4. Copie o link do repositorio.
-5. Envie o link na plataforma da DIO.
+No Windows, execute:
 
-## Referencia do Desafio
+```powershell
+powershell.exe -ExecutionPolicy Bypass -File .\scripts\gerar-audio.ps1
+```
 
-Repositorio base indicado pela DIO:
+O arquivo sera salvo em:
+
+```text
+audio/podcast-prompts-na-pratica.wav
+```
+
+## Referencia
+
+Repositorio indicado no desafio:
 
 https://github.com/felipeAguiarCode/prompts-for-podcast-generate-by-ia
 
