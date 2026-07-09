@@ -1,0 +1,15 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="675" fill="#101828"/>
+  <rect x="70" y="70" width="1060" height="535" rx="32" fill="#162033" stroke="#2D6CDF" stroke-width="4"/>
+  <circle cx="950" cy="210" r="86" fill="#2D6CDF" opacity="0.22"/>
+  <circle cx="1015" cy="288" r="48" fill="#28DA77" opacity="0.28"/>
+  <path d="M231 237C231 190.608 268.608 153 315 153H360C406.392 153 444 190.608 444 237V333C444 379.392 406.392 417 360 417H315C268.608 417 231 379.392 231 333V237Z" fill="#28DA77"/>
+  <rect x="286" y="196" width="103" height="178" rx="51.5" fill="#101828"/>
+  <rect x="326" y="416" width="24" height="76" fill="#28DA77"/>
+  <rect x="270" y="491" width="136" height="24" rx="12" fill="#28DA77"/>
+  <text x="520" y="255" fill="#F9FAFB" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="700">Prompts na</text>
+  <text x="520" y="340" fill="#28DA77" font-family="Arial, Helvetica, sans-serif" font-size="86" font-weight="800">Pratica</text>
+  <text x="520" y="410" fill="#D0D5DD" font-family="Arial, Helvetica, sans-serif" font-size="34">Como conversar melhor com a IA</text>
+  <text x="520" y="485" fill="#98A2B3" font-family="Arial, Helvetica, sans-serif" font-size="26">Podcast gerado com apoio de IA generativa</text>
+</svg>
+

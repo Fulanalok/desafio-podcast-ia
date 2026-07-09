@@ -1,72 +1,98 @@
 # Prompts na Pratica: podcast com IA
 
-Este repositorio foi criado para o desafio da DIO de gerar um podcast com apoio de inteligencia artificial.
+<p align="center">
+  <img src="./assets/cover.svg" width="360" alt="Capa do podcast Prompts na Pratica">
+</p>
 
-A ideia foi fazer um episodio curto, simples e direto sobre um assunto que aparece o tempo todo quando falamos de IA generativa: **como escrever bons prompts**.
+<p align="center">
+  <a href="https://dio.me/">
+    <img src="https://img.shields.io/badge/DIO-Desafio-28DA77" alt="DIO">
+  </a>
+  <img src="https://img.shields.io/badge/Projeto-Podcast%20com%20IA-blue" alt="Podcast com IA">
+</p>
 
-## Sobre o episodio
+## Preview
 
-**Titulo:** Prompts na Pratica: como conversar melhor com a IA
+Ouça o episodio final:
 
-O podcast explica o que e um prompt, por que instrucoes vagas costumam gerar respostas fracas e como melhorar um pedido usando contexto, objetivo, formato e restricoes.
+<div align="center">
+  <audio src="./output/podcast-prompts-na-pratica.wav" controls title="Podcast Prompts na Pratica"></audio>
+</div>
 
-Escolhi esse tema porque ele e util mesmo para quem esta comecando agora. Antes de usar ferramentas de IA para tarefas mais complexas, faz sentido aprender a pedir melhor.
+## Sobre o projeto
 
-## O que tem no repositorio
+Este repositorio foi criado para o desafio da DIO de produzir um podcast com apoio de ferramentas de inteligencia artificial.
+
+O tema escolhido foi **engenharia de prompts para iniciantes**. A proposta e mostrar, em poucos minutos, como uma instrucao bem escrita muda a qualidade da resposta de um modelo de IA.
+
+O episodio ficou com uma pegada mais didatica: primeiro explica o que e um prompt, depois compara um pedido vago com um pedido melhor estruturado e fecha com dicas praticas.
+
+## Arquivos principais
 
 ```text
 desafio-podcast-ia/
 |-- README.md
-|-- prompts.md
-|-- roteiro-podcast.md
+|-- assets/
+|   `-- cover.svg
 |-- audio/
 |   `-- podcast-prompts-na-pratica.wav
-`-- scripts/
-    `-- gerar-audio.ps1
+|-- output/
+|   `-- podcast-prompts-na-pratica.wav
+|-- roteiro-podcast.md
+|-- prompts.md
+|-- scripts/
+|   `-- gerar-audio.ps1
+`-- src/
+    `-- prompts/
+        |-- chatgpt.md
+        `-- audio.md
 ```
 
-Arquivos principais:
+## Como foi feito
 
-- `prompts.md`: prompts usados para pensar no tema, titulo, roteiro e descricao do projeto.
-- `roteiro-podcast.md`: texto final usado como base do episodio.
-- `audio/podcast-prompts-na-pratica.wav`: audio final do podcast.
-- `scripts/gerar-audio.ps1`: script em PowerShell usado para gerar o audio com voz sintetizada.
+1. Usei prompts para definir tema, titulo e estrutura do episodio.
+2. Escrevi um roteiro curto, com linguagem simples e tom de conversa.
+3. Revisei o texto para reduzir cara de texto gerado automaticamente.
+4. Gerei a narracao com sintese de voz no Windows.
+5. Ajustei pausas no script para deixar o audio menos mecanico.
+6. Organizei o repositorio seguindo a base indicada no desafio.
 
-## Como eu organizei o processo
+## Ferramentas e conceitos
 
-1. Defini o tema do episodio: engenharia de prompts para iniciantes.
-2. Usei prompts para gerar ideias de titulo e estrutura.
-3. Montei um roteiro curto, com linguagem mais proxima de conversa.
-4. Revisei o texto para ficar mais natural em formato de podcast.
-5. Gerei o audio em `.wav` usando sintese de voz no Windows.
-6. Ajustei pausas e ritmo no script para o audio nao ficar tao mecanico.
-
-## Ferramentas e conceitos usados
-
-- IA generativa
+- ChatGPT para ideacao, estrutura e revisao do roteiro
+- PowerShell com `System.Speech` para gerar o audio
 - Engenharia de prompt
-- Roteirizacao
-- Sintese de voz
-- Markdown
+- Roteirizacao para podcast
 - Git e GitHub
+- Markdown
+
+## Prompts
+
+Os prompts usados estao documentados em:
+
+- [`prompts.md`](./prompts.md)
+- [`src/prompts/chatgpt.md`](./src/prompts/chatgpt.md)
+- [`src/prompts/audio.md`](./src/prompts/audio.md)
 
 ## Como gerar o audio novamente
 
-No Windows, execute:
+No Windows, rode:
 
 ```powershell
 powershell.exe -ExecutionPolicy Bypass -File .\scripts\gerar-audio.ps1
 ```
 
-O arquivo sera salvo em:
+O audio sera gerado em:
 
 ```text
 audio/podcast-prompts-na-pratica.wav
 ```
 
+Depois, copie ou substitua tambem o arquivo em `output/`, que e o caminho usado no preview do README.
+
 ## Referencia
 
-Repositorio indicado no desafio:
+Este projeto foi inspirado na estrutura do repositorio base indicado pela DIO:
 
 https://github.com/felipeAguiarCode/prompts-for-podcast-generate-by-ia
 

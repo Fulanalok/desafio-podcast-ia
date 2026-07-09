@@ -4,9 +4,12 @@ Add-Type -AssemblyName System.Speech
 
 $projectRoot = Split-Path -Parent (Split-Path -Parent $MyInvocation.MyCommand.Path)
 $audioDir = Join-Path $projectRoot "audio"
+$outputDir = Join-Path $projectRoot "output"
 $outputPath = Join-Path $audioDir "podcast-prompts-na-pratica.wav"
+$previewPath = Join-Path $outputDir "podcast-prompts-na-pratica.wav"
 
 New-Item -ItemType Directory -Force -Path $audioDir | Out-Null
+New-Item -ItemType Directory -Force -Path $outputDir | Out-Null
 
 $ssml = @"
 <speak version="1.0" xml:lang="pt-BR">
@@ -152,5 +155,7 @@ $synth.SpeakSsml($ssml)
 $synth.SetOutputToNull()
 $synth.Dispose()
 
-Write-Host "Audio gerado em: $outputPath"
+Copy-Item -LiteralPath $outputPath -Destination $previewPath -Force
 
+Write-Host "Audio gerado em: $outputPath"
+Write-Host "Preview atualizado em: $previewPath"
