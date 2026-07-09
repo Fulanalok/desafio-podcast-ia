@@ -30,13 +30,13 @@ O episodio explica, de forma simples, o que sao prompts, por que eles sao import
 
 ```text
 desafio-podcast-ia/
-├── README.md
-├── prompts.md
-├── roteiro-podcast.md
-├── audio/
-│   └── podcast-prompts-na-pratica.wav
-└── scripts/
-    └── gerar-audio.ps1
+|-- README.md
+|-- prompts.md
+|-- roteiro-podcast.md
+|-- audio/
+|   `-- podcast-prompts-na-pratica.wav
+`-- scripts/
+    `-- gerar-audio.ps1
 ```
 
 ## Como o Projeto Foi Criado
@@ -44,7 +44,7 @@ desafio-podcast-ia/
 1. Foi escolhido um tema relacionado a inteligencia artificial generativa.
 2. Foram criados prompts para gerar ideias de titulo, estrutura e roteiro.
 3. O roteiro foi revisado para ficar mais claro e didatico.
-4. O audio foi gerado a partir do texto final do roteiro.
+4. O audio foi gerado a partir do texto final do roteiro, com pausas e ritmo de narracao.
 5. Todos os arquivos foram organizados para entrega em um repositorio GitHub.
 
 ## Tecnologias e Conceitos Usados

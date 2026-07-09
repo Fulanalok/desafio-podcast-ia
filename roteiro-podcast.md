@@ -6,23 +6,23 @@
 
 ## Episodio
 
-Ola! Seja bem-vindo a este episodio rapido sobre inteligencia artificial.
+Ola! Seja bem-vindo ao **Prompts na Pratica**, um episodio rapido para entender como conversar melhor com a inteligencia artificial.
 
-Hoje o tema e simples, mas muito importante: prompts.
+Hoje o tema e simples, mas muito importante: **prompts**.
 
 Prompt e a instrucao que voce escreve para orientar uma inteligencia artificial. Pode ser uma pergunta, um pedido, uma tarefa ou ate um conjunto de regras.
 
-Por exemplo: quando voce escreve "explique inteligencia artificial", isso e um prompt.
+Por exemplo: quando voce escreve "explique inteligencia artificial", voce acabou de criar um prompt.
 
-Mas existe uma diferenca grande entre um prompt simples e um prompt bem construido.
+Mas existe uma diferenca enorme entre um prompt qualquer e um prompt bem construido.
 
-Um prompt muito vago pode gerar uma resposta generica. Ja um prompt claro ajuda a IA a entender melhor o que voce precisa.
+Um prompt muito vago costuma gerar uma resposta generica. Ja um prompt claro ajuda a IA a entender melhor o que voce precisa.
 
 Imagine que voce pede:
 
 "Explique IA."
 
-A resposta pode vir muito ampla, tecnica ou fora do seu nivel.
+A resposta pode vir muito ampla, tecnica demais ou fora do seu nivel.
 
 Agora veja um prompt melhor:
 
@@ -30,7 +30,7 @@ Agora veja um prompt melhor:
 
 Percebe a diferenca?
 
-Nesse segundo caso, voce informou o publico, o formato, o nivel de linguagem e o tipo de exemplo esperado.
+Nesse segundo caso, voce informou o publico, o formato, o nivel de linguagem e o tipo de exemplo esperado. Isso muda completamente a qualidade da resposta.
 
 Um bom prompt geralmente tem alguns elementos importantes:
 
@@ -42,7 +42,7 @@ Terceiro: formato. Peca lista, resumo, tabela, passo a passo ou outro formato.
 
 Quarto: restricoes. Informe limites, como tamanho, linguagem ou o que deve ser evitado.
 
-Quinto: exemplos. Quando possivel, mostre um modelo de resposta.
+Quinto: exemplos. Quando possivel, mostre um modelo do que voce espera.
 
 Isso nao significa que a IA sempre vai acertar. Modelos de linguagem podem errar, inventar informacoes ou deixar passar detalhes importantes. Por isso, a revisao humana continua sendo essencial.
 
