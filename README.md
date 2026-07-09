@@ -1,7 +1,7 @@
 # Prompts na Pratica: podcast com IA
 
 <p align="center">
-  <img src="./assets/cover.svg" width="360" alt="Capa provisoria do podcast Prompts na Pratica">
+  <img src="./assets/cover.jpeg" width="360" alt="Capa do podcast Prompts na Pratica">
 </p>
 
 <p align="center">
@@ -16,7 +16,7 @@
 Ouça o episodio final:
 
 <div align="center">
-  <audio src="./output/podcast-prompts-na-pratica.wav" controls title="Podcast Prompts na Pratica"></audio>
+  <audio src="./output/podcast_editado.mp3" controls title="Podcast Prompts na Pratica"></audio>
 </div>
 
 ## Sobre o projeto
@@ -27,16 +27,14 @@ O tema escolhido foi **engenharia de prompts para iniciantes**. A proposta e mos
 
 O episodio explica o que e um prompt, compara um pedido vago com um pedido melhor estruturado e fecha com dicas praticas para conversar melhor com modelos de IA.
 
-## Fluxo pedido no desafio
+## Fluxo do desafio
 
-O enunciado do desafio propõe este processo:
+O projeto segue o fluxo proposto nas aulas:
 
 1. **ChatGPT** para criar um titulo atrativo e um roteiro magnetico.
-2. **Midjourney** para gerar uma capa personalizada.
+2. **IA de imagem** para gerar uma capa personalizada a partir do prompt de capa.
 3. **ElevenLabs** para gerar uma voz mais humanizada.
-4. GitHub para organizar prompts, roteiro, capa e audio final.
-
-Neste repositorio, deixei os prompts e a estrutura preparados para esse fluxo. Como eu nao tenho acesso direto ao Midjourney e ao ElevenLabs nesta sessao, mantive tambem uma versao local em WAV como apoio. Para ficar 100% igual ao enunciado, gere a capa no Midjourney e a voz no ElevenLabs usando os prompts documentados.
+4. **GitHub** para organizar prompts, roteiro, capa e audio final.
 
 ## Aulas usadas como base
 
@@ -61,10 +59,13 @@ O projeto foi organizado seguindo os pontos trabalhados durante as aulas:
 desafio-podcast-ia/
 |-- README.md
 |-- assets/
+|   |-- cover.jpeg
 |   `-- cover.svg
 |-- audio/
+|   |-- podcast-prompts-na-pratica.mp3
 |   `-- podcast-prompts-na-pratica.wav
 |-- output/
+|   |-- podcast_editado.mp3
 |   `-- podcast-prompts-na-pratica.wav
 |-- roteiro-podcast.md
 |-- prompts.md
@@ -80,24 +81,24 @@ desafio-podcast-ia/
         `-- midjourney.md
 ```
 
-## Como foi feito ate aqui
+## Como foi feito
 
 1. Defini o publico do podcast: pessoas iniciantes em IA.
 2. Usei prompts no estilo ChatGPT para escolher tema, titulo e estrutura.
 3. Escrevi um roteiro curto, com linguagem simples e tom de conversa.
 4. Revisei o texto para reduzir cara de texto gerado automaticamente.
-5. Preparei o prompt de capa para uso no Midjourney.
-6. Preparei o texto e a direcao de voz para uso no ElevenLabs.
-7. Mantive uma versao local em WAV como apoio, gerada com sintese de voz do Windows.
+5. Usei um prompt visual para criar a capa personalizada.
+6. Gerei o audio final no ElevenLabs.
+7. Salvei o audio final em `output/podcast_editado.mp3`.
 8. Organizei o repositorio seguindo a base indicada no desafio.
 
-## Ferramentas do fluxo oficial
+## Ferramentas usadas
 
 - ChatGPT para ideacao, titulo, estrutura e roteiro.
-- Midjourney para capa personalizada.
+- IA de imagem para capa personalizada.
 - ElevenLabs para voz mais humanizada.
-- CapCut ou outro editor para ajustes finais de audio, se necessario.
-- GitHub para entrega do projeto.
+- GitHub para versionamento e entrega do projeto.
+- Markdown para documentacao.
 
 ## Prompts
 
@@ -111,31 +112,28 @@ Os prompts usados estao documentados em:
 - [`src/prompts/capa.md`](./src/prompts/capa.md)
 - [`src/prompts/edicao.md`](./src/prompts/edicao.md)
 
-## Como finalizar seguindo exatamente o enunciado
+## Audio final
 
-1. Abra o Midjourney e use o prompt de `src/prompts/midjourney.md`.
-2. Salve a melhor imagem gerada como `assets/cover.png`.
-3. Abra o ElevenLabs e cole o roteiro de `roteiro-podcast.md`.
-4. Use a direcao de voz descrita em `src/prompts/elevenlabs.md`.
-5. Baixe o audio em MP3 e salve como `output/podcast_editado.mp3`.
-6. Se editar o audio no CapCut, mantenha o arquivo final editado em `output/`.
-7. Atualize o preview do README para apontar para o MP3 final, se desejar.
+O arquivo final do podcast esta em:
+
+```text
+output/podcast_editado.mp3
+```
+
+Tambem deixei uma copia em:
+
+```text
+audio/podcast-prompts-na-pratica.mp3
+```
 
 ## Alternativa local
 
-Enquanto o audio do ElevenLabs nao for gerado, existe uma versao local em WAV.
+O repositorio tambem mantem uma versao WAV gerada localmente para teste.
 
 Para recriar essa versao no Windows:
 
 ```powershell
 powershell.exe -ExecutionPolicy Bypass -File .\scripts\gerar-audio.ps1
-```
-
-O audio local sera gerado em:
-
-```text
-audio/podcast-prompts-na-pratica.wav
-output/podcast-prompts-na-pratica.wav
 ```
 
 ## Referencia
